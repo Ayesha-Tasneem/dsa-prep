@@ -1,0 +1,12 @@
+//problem link: https://www.geeksforgeeks.org/problems/linked-list-insertion-at-beginning/1
+//time complexity: O(1)
+//space complexity: O(1)
+class Solution {
+    public Node insertAtFront(Node head, int x) {
+        // code here
+        Node newNode = new Node(x);
+        newNode.next = head;
+        head = newNode;
+        return head;
+    }
+}
